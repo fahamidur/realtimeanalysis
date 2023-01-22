@@ -14,6 +14,7 @@ from utils import plot
 
 def processvideo(video_path):
     print(video_path)
+    model = Model()
     cap = cv2.VideoCapture(video_path)
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH) + 0.5)
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT) + 0.5)
