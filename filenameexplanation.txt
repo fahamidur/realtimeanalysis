@@ -1,0 +1,3 @@
+RVS == Realtime video storage.. 
+AV = Stores video that has gone through analysis
+SP = saved photo of the prediction
