@@ -10,10 +10,10 @@ app = FastAPI()
 
 @app.post('/')
 def process_video():
-    directory = './RVS'
+    directory = './SP'
     curr_path = f"{directory}/{os.listdir(directory)[-1]}"
     word=curr_path.split('.')
-    word = word.split("-")
+    word = word[0].split("-")
     return {
         'label' : word[0],
         'time' : word[1]
